@@ -1,25 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
 
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    header {
+      background: #222;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .about {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .about img {
+      float: left;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 1.5rem;
+      object-fit: cover;
+    }
+
+    .about h2 {
+      margin-top: 0;
+    }
+
+    .skills, .resume {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #eee;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .resume a {
+      display: inline-block;
+      background: #0078ff;
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .resume a:hover {
+      background: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .about img {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="gallery">
-        <ul class="cards">
-            <li>0</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-        </ul>
+  <header>
+    <h1>Zohaib Akram</h1>
+    <p>CS Student | Aspiring AI & Software Engineer | Passionate About Innovation & Code</p>
+  </header>
 
-    </div>
+  <div class="container">
+    <section class="about">
+      <img src="profile.jpg" alt="Your photo">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m Zohaib Akram, a passionate [your role, e.g., computer science student / web developer].
+        I enjoy building projects, solving problems, and continuously learning new technologies.
+        I’m particularly interested in [your interests, e.g., AI, web development, or cybersecurity].
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript / HTML / CSS</li>
+        <li>Python & Java</li>
+        <li>Database Management (MySQL, MongoDB)</li>
+        <li>Problem Solving & Algorithms</li>
+      </ul>
+    </section>
+
+    <section class="resume">
+      <h2>Resume</h2>
+      <p>You can view or download my full resume here:</p>
+      <a href="resume.pdf" target="_blank">Download Resume</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Zohaib Akram | Connect with me on <a href="https://www.linkedin.com/in/zohaib-akram-70495a319/">LinkedIn</a> & <a href="https://github.com/Zohaib160">GitHub</a></p>
+  </footer>
 </body>
 </html>
